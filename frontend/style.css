@@ -1,0 +1,60 @@
+/* FamPay Comic & Neo-Brutalist Style Rules */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=JetBrains+Mono:wght@600;800&display=swap');
+
+:root {
+    --color-yellow: #fde047;
+    --color-pink: #f43397;
+    --color-green: #00d084;
+    --color-dark: #0f172a;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.font-comic {
+    font-family: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+}
+
+.shadow-comic-sm {
+    box-shadow: 3px 3px 0px #0f172a;
+}
+
+.shadow-comic-md {
+    box-shadow: 4px 4px 0px #0f172a;
+}
+
+.shadow-comic-lg {
+    box-shadow: 6px 6px 0px #0f172a;
+}
+
+.shadow-comic-green {
+    box-shadow: 4px 4px 0px #038d63;
+}
+
+.shadow-comic-pink {
+    box-shadow: 4px 4px 0px #f43397;
+}
+
+.btn-comic {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    user-select: none;
+}
+
+.btn-comic:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #0f172a !important;
+}
+
+@keyframes pulse-ring {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.15); opacity: 0.3; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.anim-pulse-ring {
+    animation: pulse-ring 2s infinite ease-in-out;
+}
